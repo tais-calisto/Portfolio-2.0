@@ -1,11 +1,12 @@
 import { DefaultTheme } from 'styled-components'
 
 const myTheme: DefaultTheme = {
-  borderRadius: '5px',
-
   colors: {
-    main: 'cyan',
-    secondary: 'magenta',
+    primary: '#BBA1D0',
+    secondary: '#93A199',
+    white: '#F5F5F5',
+    gray: '#717073',
+    black: '#080808',
   },
 }
 
