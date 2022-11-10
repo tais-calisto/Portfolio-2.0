@@ -21,5 +21,6 @@ export const HeaderStyle = styled.header`
     top: -37px;
     background: rgba(187, 161, 208, 0.15);
     filter: blur(40px);
+    border-radius: 50%;
   }
 `
