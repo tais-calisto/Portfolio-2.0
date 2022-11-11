@@ -10,7 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0 1.5rem;
     color: ${({ theme }) => theme.colors.white};
     font-family: "Pridi", serif;
-    overflow: hidden;
+    overflow-x: hidden;
   }
   a,
   h1 {

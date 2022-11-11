@@ -3,6 +3,8 @@ import { myTheme } from './globals/theme'
 import { GlobalStyle } from './globals/globalStyle'
 import Header from './components/Header/Header'
 import Presentation from './components/Presentation/Presentation'
+import Resume from './components/Resume/Resume'
+import Projects from './components/Projects/Projects'
 
 function App() {
   return (
@@ -10,6 +12,8 @@ function App() {
       <GlobalStyle />
       <Header />
       <Presentation />
+      <Resume />
+      <Projects />
     </ThemeProvider>
   )
 }
