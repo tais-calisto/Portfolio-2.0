@@ -1,7 +1,35 @@
-import React from 'react';
+import { useEffect, useRef, useState } from 'react';
+import { ResumeStyle } from '../styles/ResumeStyle';
+const Resume = () => {
+  const [show, setShow] = useState(false);
+  const ref = useRef<HTMLElement>(null);
 
-const resume = () => {
-  return <div>resume</div>;
+  const handleShow = () => {
+    const elementHeight = ref.current?.clientHeight;
+    if (elementHeight)
+      if (window.scrollY > elementHeight) {
+        setShow(true);
+      } else {
+        setShow(false);
+      }
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleShow);
+    return () => window.removeEventListener('scroll', handleShow);
+  }, []);
+
+  return (
+    <ResumeStyle>
+      <article ref={ref} className={show ? 'show' : undefined}>
+        <h2>Sobre mim</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Reprehenderit, repudiandae?
+        </p>
+      </article>
+    </ResumeStyle>
+  );
 };
 
-export default resume;
+export default Resume;

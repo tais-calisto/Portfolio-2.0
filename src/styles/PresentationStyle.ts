@@ -1,8 +1,7 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const PresetationStyle = styled.main`
   text-align: center;
-
   span {
     color: ${({ theme }) => theme.colors.primary};
   }
@@ -37,4 +36,4 @@ export const PresetationStyle = styled.main`
       scale: 1;
     }
   }
-`
+`;

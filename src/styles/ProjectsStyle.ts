@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const ProjectsStyle = styled.main`
   .scroller {
@@ -17,4 +17,4 @@ export const ProjectsStyle = styled.main`
   div {
     background-color: blue;
   }
-`
+`;
