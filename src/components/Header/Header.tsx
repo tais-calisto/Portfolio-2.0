@@ -1,4 +1,4 @@
-import { HeaderStyle } from './style'
+import { HeaderStyle } from './style';
 
 const Header = () => {
   return (
@@ -14,7 +14,7 @@ const Header = () => {
         </a>
       </nav>
     </HeaderStyle>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

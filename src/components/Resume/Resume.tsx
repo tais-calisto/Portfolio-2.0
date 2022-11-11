@@ -1,23 +1,23 @@
-import { useEffect, useRef, useState } from 'react'
-import { ResumeStyle } from './style'
+import { useEffect, useRef, useState } from 'react';
+import { ResumeStyle } from './style';
 const Resume = () => {
-  const [show, setShow] = useState(false)
-  const ref = useRef<HTMLElement>(null)
+  const [show, setShow] = useState(false);
+  const ref = useRef<HTMLElement>(null);
 
   const handleShow = () => {
-    const elementHeight = ref.current?.clientHeight
+    const elementHeight = ref.current?.clientHeight;
     if (elementHeight)
       if (window.scrollY > elementHeight) {
-        setShow(true)
+        setShow(true);
       } else {
-        setShow(false)
+        setShow(false);
       }
-  }
+  };
 
   useEffect(() => {
-    window.addEventListener('scroll', handleShow)
-    return () => window.removeEventListener('scroll', handleShow)
-  }, [])
+    window.addEventListener('scroll', handleShow);
+    return () => window.removeEventListener('scroll', handleShow);
+  }, []);
 
   return (
     <ResumeStyle>
@@ -29,7 +29,7 @@ const Resume = () => {
         </p>
       </article>
     </ResumeStyle>
-  )
-}
+  );
+};
 
-export default Resume
+export default Resume;
