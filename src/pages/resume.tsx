@@ -1,5 +1,4 @@
 import { useEffect, useRef, useState } from 'react';
-import Header from '../components/Header/Header';
 import { ResumeStyle } from '../styles/ResumeStyle';
 import Navegation from '../components/Navegation/Navegation';
 const Resume = () => {
@@ -23,7 +22,6 @@ const Resume = () => {
 
   return (
     <>
-      <Header />
       <Navegation />
       <ResumeStyle>
         <article className='about'>

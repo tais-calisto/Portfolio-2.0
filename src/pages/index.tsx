@@ -1,4 +1,3 @@
-import Header from '../components/Header/Header';
 import Image from 'next/image';
 import avatar from '../../public/avatar.svg';
 import { PresetationStyle } from '../styles/PresentationStyle';
@@ -8,7 +7,6 @@ import { links } from '../utils/navegationLinks';
 function App() {
   return (
     <>
-      <Header />
       <PresetationStyle>
         <div className='first-animation'>
           <Image src={avatar} alt='Foto de rosto' />

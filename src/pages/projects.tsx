@@ -1,5 +1,4 @@
 import Image from 'next/image';
-import Header from '../components/Header/Header';
 import Navegation from '../components/Navegation/Navegation';
 import { ProjectsStyle } from '../styles/ProjectsStyle';
 import { projects } from '../utils/projects';
@@ -7,7 +6,6 @@ import { projects } from '../utils/projects';
 const Projects = () => {
   return (
     <>
-      <Header />
       <Navegation />
       <ProjectsStyle>
         <h2>Projetos</h2>
