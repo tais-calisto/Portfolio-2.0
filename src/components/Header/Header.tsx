@@ -9,10 +9,18 @@ const Header = () => {
         Taís
       </Link>
       <nav>
-        <a href='https://www.linkedin.com/in/taiscalisto/' target={'_blank'}>
+        <a
+          href='https://www.linkedin.com/in/taiscalisto/'
+          target={'_blank'}
+          rel={'noreferrer'}
+        >
           Linkedin
         </a>
-        <a href='https://github.com/tais-calisto' target={'_blank'}>
+        <a
+          href='https://github.com/tais-calisto'
+          target={'_blank'}
+          rel={'noreferrer'}
+        >
           GitHub
         </a>
       </nav>

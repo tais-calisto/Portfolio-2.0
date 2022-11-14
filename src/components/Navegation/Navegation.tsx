@@ -12,7 +12,6 @@ const Navegation = () => {
 
   useEffect(() => {
     setUrl(path);
-    console.log(url);
   }, [path]);
   return (
     <NavStyle>

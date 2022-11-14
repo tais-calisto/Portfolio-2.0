@@ -11,6 +11,9 @@ export const HeaderStyle = styled.header`
     justify-content: space-between;
     a {
       text-decoration: none;
+      &:hover {
+        transform: rotate(10deg);
+      }
     }
   }
   .background-detail {

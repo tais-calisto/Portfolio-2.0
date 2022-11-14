@@ -1,7 +1,13 @@
-import React from 'react';
+import Header from '../components/Header/Header';
+import Navegation from '../components/Navegation/Navegation';
 
 const contact = () => {
-  return <div>contact</div>;
+  return (
+    <>
+      <Header />
+      <Navegation />
+    </>
+  );
 };
 
 export default contact;

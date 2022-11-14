@@ -9,6 +9,7 @@ declare module 'styled-components' {
       secondary: string;
       white: string;
       gray: string;
+      darkGray: string;
       black: string;
     };
   }

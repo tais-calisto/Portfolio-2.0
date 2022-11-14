@@ -6,9 +6,6 @@ export const ResumeStyle = styled.main`
     margin-left: 3rem;
   }
 
-  h2 {
-    color: ${({ theme }) => theme.colors.primary};
-  }
   p {
     padding-left: 1rem;
     margin: 0 6rem 0 3rem;

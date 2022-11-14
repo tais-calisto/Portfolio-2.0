@@ -2,6 +2,9 @@ import styled from 'styled-components';
 
 export const PresetationStyle = styled.main`
   text-align: center;
+  h2 {
+    color: ${({ theme }) => theme.colors.white};
+  }
   span {
     color: ${({ theme }) => theme.colors.primary};
   }
