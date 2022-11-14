@@ -1,25 +1,6 @@
-import { useEffect, useRef, useState } from 'react';
 import { ResumeStyle } from '../styles/ResumeStyle';
 import Navegation from '../components/Navegation/Navegation';
 const Resume = () => {
-  const [show, setShow] = useState(false);
-  const ref = useRef<HTMLElement>(null);
-
-  const handleShow = () => {
-    const elementHeight = ref.current?.clientHeight;
-    if (elementHeight)
-      if (window.scrollY > elementHeight) {
-        setShow(true);
-      } else {
-        setShow(false);
-      }
-  };
-
-  useEffect(() => {
-    window.addEventListener('scroll', handleShow);
-    return () => window.removeEventListener('scroll', handleShow);
-  }, []);
-
   return (
     <>
       <Navegation />
