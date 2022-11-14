@@ -2,6 +2,8 @@ import Header from '../components/Header/Header';
 import Image from 'next/image';
 import avatar from '../../public/avatar.svg';
 import { PresetationStyle } from '../styles/PresentationStyle';
+import Link from 'next/link';
+import { links } from '../utils/navegationLinks';
 
 function App() {
   return (
@@ -16,6 +18,15 @@ function App() {
           Crio soluções com <br />
           <span>cuidado e propósito</span>
         </h2>
+        <nav>
+          {links.map((link) => {
+            return (
+              <Link href={link.link} key={link.id}>
+                {link.name}
+              </Link>
+            );
+          })}
+        </nav>
         <div className='background-detail'></div>
       </PresetationStyle>
     </>

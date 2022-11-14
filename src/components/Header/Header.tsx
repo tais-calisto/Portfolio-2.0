@@ -1,10 +1,13 @@
+import Link from 'next/link';
 import { HeaderStyle } from './style';
 
 const Header = () => {
   return (
     <HeaderStyle>
       <div className='background-detail'></div>
-      <h1>Taís</h1>
+      <Link href={'/'} className='home-link'>
+        Taís
+      </Link>
       <nav>
         <a href='https://www.linkedin.com/in/taiscalisto/' target={'_blank'}>
           Linkedin

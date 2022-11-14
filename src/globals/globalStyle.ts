@@ -1,9 +1,8 @@
-import { createGlobalStyle } from 'styled-components'
-import '@fontsource/dancing-script'
-import '@fontsource/simonetta'
-import '@fontsource/pridi'
+import { createGlobalStyle } from 'styled-components';
+import '@fontsource/dancing-script';
+import '@fontsource/simonetta';
+import '@fontsource/pridi';
 
-// theme is also fully typed
 export const GlobalStyle = createGlobalStyle`
   body {
     background-color:${({ theme }) => theme.colors.black};
@@ -13,12 +12,13 @@ export const GlobalStyle = createGlobalStyle`
     overflow-x: hidden;
   }
   a,
-  h1 {
+  .home-link {
     color: ${({ theme }) => theme.colors.secondary};
   }
-  h1{
+  .home-link{
     font-family: "Dancing Script", cursive;
     font-size: 3rem;
+    text-decoration: none;
   }
   h2{
     font-size: 2.5rem;
@@ -38,4 +38,4 @@ export const GlobalStyle = createGlobalStyle`
   header, main, footer{
   margin: 0 1.5rem ;
   }
-`
+`;

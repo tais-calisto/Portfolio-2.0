@@ -5,7 +5,6 @@ export const ResumeStyle = styled.main`
     border: 2px dotted ${({ theme }) => theme.colors.primary};
     border-radius: 10px;
     transition: 0.2s all ease-in-out;
-    opacity: 0;
     border: 10px solid ${({ theme }) => theme.colors.primary};
     padding: 1rem;
     &:hover {

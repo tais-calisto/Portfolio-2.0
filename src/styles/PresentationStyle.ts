@@ -7,10 +7,10 @@ export const PresetationStyle = styled.main`
   }
   .background-detail {
     position: absolute;
-    width: 416px;
-    height: 416px;
-    left: 911px;
-    top: 400px;
+    width: 50vw;
+    height: 50vh;
+    right: -25vw;
+    top: 50%;
     border-radius: 50%;
     background: rgba(147, 161, 153, 0.2);
     filter: blur(58.386px);
@@ -20,6 +20,17 @@ export const PresetationStyle = styled.main`
   }
   .second-animation {
     animation: appear 1s ease;
+  }
+
+  nav {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    a {
+      font-weight: bold;
+      font-family: 'Pridi', serif;
+    }
   }
 
   @keyframes appear {

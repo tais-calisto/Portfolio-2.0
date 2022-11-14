@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 export const HeaderStyle = styled.header`
   display: flex;
@@ -23,4 +23,4 @@ export const HeaderStyle = styled.header`
     filter: blur(40px);
     border-radius: 50%;
   }
-`
+`;
