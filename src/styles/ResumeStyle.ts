@@ -1,32 +1,46 @@
 import styled from 'styled-components';
 
 export const ResumeStyle = styled.main`
+  padding-top: 3rem;
   article {
-    border: 2px dotted ${({ theme }) => theme.colors.primary};
-    border-radius: 10px;
-    transition: 0.2s all ease-in-out;
-    border: 10px solid ${({ theme }) => theme.colors.primary};
-    padding: 1rem;
-    &:hover {
-      scale: 1.01;
-    }
-  }
-  .show {
-    opacity: 1;
+    margin-left: 3rem;
   }
 
-  @keyframes appear {
+  h2 {
+    color: ${({ theme }) => theme.colors.primary};
+  }
+  p {
+    padding-left: 1rem;
+    margin: 0 6rem 0 3rem;
+    border-left: 4px solid ${({ theme }) => theme.colors.primary};
+    border-radius: 2px;
+    text-align: justify;
+  }
+
+  .about {
+    animation: show 0.4s linear;
+  }
+  .skills {
+    animation: show 0.8s linear;
+  }
+  .experience {
+    animation: show 1.2s linear;
+  }
+  .education {
+    animation: show 1.6s linear;
+  }
+
+  @keyframes show {
     0% {
       opacity: 0;
-      scale: 0.5;
+      transform: translateX(100px);
     }
     50% {
-      opacity: 0;
-      scale: 0.5;
+      opacity: 0.5;
+      transform: translateX(50px);
     }
     100% {
       opacity: 1;
-      scale: 1;
     }
   }
 `;

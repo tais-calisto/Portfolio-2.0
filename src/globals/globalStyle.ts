@@ -19,6 +19,7 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Dancing Script", cursive;
     font-size: 3rem;
     text-decoration: none;
+    z-index: 1;
   }
   h2{
     font-size: 2.5rem;

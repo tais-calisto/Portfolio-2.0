@@ -5,7 +5,7 @@ const Header = () => {
   return (
     <HeaderStyle>
       <div className='background-detail'></div>
-      <Link href={'/'} className='home-link'>
+      <Link href='/' className='home-link'>
         Taís
       </Link>
       <nav>
