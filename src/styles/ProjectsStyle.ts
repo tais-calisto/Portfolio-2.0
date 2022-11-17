@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 
 export const ProjectsStyle = styled.main`
+  h2 {
+    margin-left: 3rem;
+  }
   .scroller {
+    margin: 0 6rem 0 3rem;
     background-color: transparent;
     display: grid;
     grid-auto-flow: column;

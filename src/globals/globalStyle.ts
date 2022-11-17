@@ -11,6 +11,11 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Pridi", serif;
     overflow-x: hidden;
   }
+
+  main{
+    padding-top: 3rem;
+  }
+
   a,
   .home-link {
     color: ${({ theme }) => theme.colors.secondary};
@@ -38,6 +43,13 @@ export const GlobalStyle = createGlobalStyle`
     font-family: "Simonetta", cursive; 
     font-size:1.5rem ;
     transition: 0.2s all ease-in-out;
+  }
+  
+  .contact-link{
+    font-family: "Pridi", serif;
+    text-decoration: none;
+    color:${({ theme }) => theme.colors.primary};
+    font-size: 1rem;
   }
 
   header, main, footer{

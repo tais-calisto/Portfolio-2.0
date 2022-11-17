@@ -48,7 +48,7 @@ const Resume = () => {
 
           {experience.map((ex) => {
             return (
-              <div>
+              <div key={ex.id}>
                 <h3>{ex.title}</h3>
                 <span>{ex.time}</span>
                 <p>{ex.description}</p>
@@ -59,13 +59,11 @@ const Resume = () => {
         <article className='education'>
           <h2>Educação</h2>
           <div>
-            {education.map((ed) => {
-              return (
-                <ul>
-                  <li>{ed.title}</li>
-                </ul>
-              );
-            })}
+            <ul>
+              {education.map((ed) => {
+                return <li key={ed.id}>{ed.title}</li>;
+              })}
+            </ul>
           </div>
         </article>
       </ResumeStyle>

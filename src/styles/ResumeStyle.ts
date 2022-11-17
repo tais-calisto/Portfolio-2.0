@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const ResumeStyle = styled.main`
-  padding-top: 3rem;
   article {
     margin-left: 3rem;
   }
