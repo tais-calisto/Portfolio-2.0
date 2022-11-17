@@ -1,5 +1,13 @@
 import { ResumeStyle } from '../styles/ResumeStyle';
+import {
+  IconBrandReact,
+  IconBrandJavascript,
+  IconBrandPython,
+  IconBrandGit,
+  IconBrandNextjs,
+} from '@tabler/icons';
 import Navegation from '../components/Navegation/Navegation';
+import { experience, education } from '../utils/resume';
 const Resume = () => {
   return (
     <>
@@ -7,51 +15,58 @@ const Resume = () => {
       <ResumeStyle>
         <article className='about'>
           <h2>Sobre mim</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
-            illum saepe molestiae accusantium? Architecto non quidem atque
-            deleniti delectus omnis nemo autem magnam aliquid reprehenderit
-            earum natus incidunt dignissimos suscipit recusandae cupiditate
-            similique temporibus, sapiente nihil aspernatur quia voluptate
-            cumque. Nisi corporis dolor nihil id culpa quod nostrum nobis
-            quibusdam.
-          </p>
+          <div>
+            <p>
+              Olá! Me chamo Taís. Sou médica de formação e demorei alguns anos
+              para descobrir que tecnologia é minha paixão. Acredito na
+              importância de pessoas e organizações com preocupação social e
+              ambiental estarem na frente do desenvolvimento tecnológico e quero
+              fazer parte desse processo.
+            </p>
+          </div>
         </article>
         <article className='skills'>
           <h2>Habilidades</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
-            illum saepe molestiae accusantium? Architecto non quidem atque
-            deleniti delectus omnis nemo autem magnam aliquid reprehenderit
-            earum natus incidunt dignissimos suscipit recusandae cupiditate
-            similique temporibus, sapiente nihil aspernatur quia voluptate
-            cumque. Nisi corporis dolor nihil id culpa quod nostrum nobis
-            quibusdam.
-          </p>
+          <div>
+            <p>
+              Iniciei minha jornada como desenvolvedora front-end, trabalho com
+              JavaScript, TypeScript, React e Next. Também tenho conhecimentos
+              em Node, Python e banco de dados, como MongoDB e MySQL. Sigo
+              aprendendo e me desenvolvendo pessoal e profissionalmente.
+            </p>
+            <aside>
+              <IconBrandGit />
+              <IconBrandJavascript />
+              <IconBrandPython />
+              <IconBrandReact />
+              <IconBrandNextjs />
+            </aside>
+          </div>
         </article>
         <article className='experience'>
           <h2>Experiência</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
-            illum saepe molestiae accusantium? Architecto non quidem atque
-            deleniti delectus omnis nemo autem magnam aliquid reprehenderit
-            earum natus incidunt dignissimos suscipit recusandae cupiditate
-            similique temporibus, sapiente nihil aspernatur quia voluptate
-            cumque. Nisi corporis dolor nihil id culpa quod nostrum nobis
-            quibusdam.
-          </p>
+
+          {experience.map((ex) => {
+            return (
+              <div>
+                <h3>{ex.title}</h3>
+                <span>{ex.time}</span>
+                <p>{ex.description}</p>
+              </div>
+            );
+          })}
         </article>
         <article className='education'>
           <h2>Educação</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
-            illum saepe molestiae accusantium? Architecto non quidem atque
-            deleniti delectus omnis nemo autem magnam aliquid reprehenderit
-            earum natus incidunt dignissimos suscipit recusandae cupiditate
-            similique temporibus, sapiente nihil aspernatur quia voluptate
-            cumque. Nisi corporis dolor nihil id culpa quod nostrum nobis
-            quibusdam.
-          </p>
+          <div>
+            {education.map((ed) => {
+              return (
+                <ul>
+                  <li>{ed.title}</li>
+                </ul>
+              );
+            })}
+          </div>
         </article>
       </ResumeStyle>
     </>
