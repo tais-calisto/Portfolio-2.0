@@ -1,4 +1,4 @@
-import { ResumeStyle } from '../styles/ResumeStyle';
+import { ResumeStyle } from '@src/styles/ResumeStyle';
 import {
   IconBrandReact,
   IconBrandJavascript,
@@ -6,8 +6,9 @@ import {
   IconBrandGit,
   IconBrandNextjs,
 } from '@tabler/icons';
-import Navegation from '../components/Navegation/Navegation';
-import { experience, education } from '../utils/resume';
+import Navegation from '@src/components/Navegation/Navegation';
+import { experience, education } from '@src/utils/resume';
+
 const Resume = () => {
   return (
     <>

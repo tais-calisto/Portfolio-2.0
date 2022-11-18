@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import Navegation from '../components/Navegation/Navegation';
-import { ContactStyle } from '../styles/ContactStyle';
+import Navegation from '@src/components/Navegation/Navegation';
+import { ContactStyle } from '@src/styles/ContactStyle';
 
 const Contact = () => {
   const email = 'taiscalisto97@gmail.com';

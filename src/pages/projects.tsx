@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Navegation from '../components/Navegation/Navegation';
-import { ProjectsStyle } from '../styles/ProjectsStyle';
-import { projects } from '../utils/projects';
+import { ProjectsStyle } from '@src/styles/ProjectsStyle';
+import { projects } from '@src/utils/projects';
 
 const Projects = () => {
   return (

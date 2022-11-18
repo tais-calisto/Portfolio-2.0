@@ -1,8 +1,8 @@
 import Image from 'next/image';
 import avatar from '../../public/avatar.svg';
-import { PresetationStyle } from '../styles/PresentationStyle';
+import { PresetationStyle } from '@src/styles/PresentationStyle';
 import Link from 'next/link';
-import { links } from '../utils/navegationLinks';
+import { links } from '@src/utils/navegationLinks';
 
 function App() {
   return (

@@ -4,11 +4,11 @@ import { describe, expect, it } from 'vitest';
 import Header from './Header';
 
 describe('Header', () => {
-  it('renders correctly', async () => {
+  it('renders correctly',() => {
     render(<Header />);
-    const title = await screen.findByText('Taís');
+    const title =  screen.getByText('Taís');
     expect(title).toBeInTheDocument();
-    const links = await screen.getAllByRole('link');
+    const links =  screen.getAllByRole('link');
     links.forEach((link) => {
       expect(link).toBeInTheDocument();
     });
