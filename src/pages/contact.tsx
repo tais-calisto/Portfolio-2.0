@@ -31,6 +31,7 @@ const Contact = () => {
             entre em contato, será muito legal conversar sobre seu projeto!
           </p>
           <ul>
+            <legend>Links para minhas redes:</legend>
             <li
               onClick={copyToClipboard}
               onMouseOver={showCopytoClipboard}

@@ -37,11 +37,25 @@ export const ProjectsStyle = styled.main`
     .tecnologies,
     .links {
       display: flex;
-      gap: 1rem;
+      flex-direction: column;
+      gap: 0.2rem;
+      ul {
+        padding: 0;
+      }
+      p {
+        margin-bottom: 0;
+        font-size: 0.9rem;
+        color: ${({ theme }) => theme.colors.secondary};
+      }
+      li {
+        list-style: none;
+        display: inline;
+        margin-right: 1rem;
+      }
     }
 
     .tecnologies {
-      p {
+      li {
         padding: 0.2rem 0.4rem;
         background-color: ${({ theme }) => theme.colors.primary};
         border-radius: 5px;
@@ -55,11 +69,11 @@ export const ProjectsStyle = styled.main`
         font-weight: bold;
         text-decoration: none;
         padding: 0.2rem 0.4rem;
-        border: 2px solid ${({ theme }) => theme.colors.secondary};
+        border: 2px solid ${({ theme }) => theme.colors.primary};
         border-radius: 5px;
-        color: ${({ theme }) => theme.colors.secondary};
+        color: ${({ theme }) => theme.colors.primary};
         &:hover {
-          background-color: ${({ theme }) => theme.colors.secondary};
+          background-color: ${({ theme }) => theme.colors.primary};
           color: ${({ theme }) => theme.colors.darkGray};
         }
       }

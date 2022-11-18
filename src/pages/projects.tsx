@@ -21,18 +21,24 @@ const Projects = () => {
                   ></Image> */}
                   <p>{project.description}</p>
                   <div className='tecnologies'>
-                    {project.tecnologies.map((tec, index) => {
-                      return <p key={index}>{tec}</p>;
-                    })}
+                    <p>Tecnologias utilizadas:</p>
+                    <ul>
+                      {project.tecnologies.map((tec, index) => {
+                        return <li key={index}>{tec}</li>;
+                      })}
+                    </ul>
                   </div>
                   <div className='links'>
-                    {project.links.map((link) => {
-                      return (
-                        <a href={link.url} key={link.id}>
-                          {link.name}
-                        </a>
-                      );
-                    })}
+                    <p>Acesse o projeto:</p>
+                    <ul>
+                      {project.links.map((link) => {
+                        return (
+                          <li key={link.id}>
+                            <a href={link.url}>{link.name}</a>
+                          </li>
+                        );
+                      })}
+                    </ul>
                   </div>
                 </article>
               </div>
