@@ -55,4 +55,15 @@ export const GlobalStyle = createGlobalStyle`
   header, main, footer{
   margin: 0 1.5rem ;
   }
+
+  .background-detail {
+    position: absolute;
+    width: 18rem;
+    height: 18rem;
+    right: -5rem;
+    border-radius: 50%;
+    background: rgba(147, 161, 153, 0.2);
+    filter: blur(58.386px);
+    overflow: hidden;
+  }
 `;

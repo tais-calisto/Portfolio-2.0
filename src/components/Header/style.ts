@@ -18,8 +18,8 @@ export const HeaderStyle = styled.header`
   }
   .background-detail {
     position: absolute;
-    width: 285px;
-    height: 285px;
+    width: 16rem;
+    height: 16rem;
     left: -50px;
     top: -37px;
     background: rgba(187, 161, 208, 0.15);

@@ -8,6 +8,7 @@ import {
 } from '@tabler/icons';
 import Navegation from '@src/components/Navegation/Navegation';
 import { experience, education } from '@src/utils/resume';
+import Footer from '@src/components/Footer';
 
 const Resume = () => {
   return (
@@ -68,6 +69,7 @@ const Resume = () => {
           </div>
         </article>
       </ResumeStyle>
+      <Footer />
     </>
   );
 };

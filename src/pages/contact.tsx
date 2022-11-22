@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import Navegation from '@src/components/Navegation/Navegation';
 import { ContactStyle } from '@src/styles/ContactStyle';
+import Footer from '@src/components/Footer';
 
 const Contact = () => {
   const email = 'taiscalisto97@gmail.com';
@@ -62,6 +63,7 @@ const Contact = () => {
           </ul>
         </div>
       </ContactStyle>
+      <Footer />
     </>
   );
 };

@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Navegation from '../components/Navegation/Navegation';
 import { ProjectsStyle } from '@src/styles/ProjectsStyle';
 import { projects } from '@src/utils/projects';
+import Footer from '@src/components/Footer';
 
 const Projects = () => {
   return (
@@ -46,6 +47,7 @@ const Projects = () => {
           })}
         </div>
       </ProjectsStyle>
+      <Footer />
     </>
   );
 };
