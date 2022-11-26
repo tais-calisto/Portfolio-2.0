@@ -25,6 +25,9 @@ export const HeaderStyle = styled.header`
     background: rgba(187, 161, 208, 0.15);
     filter: blur(40px);
     border-radius: 50%;
+    -webkit-filter: blur(40px);
+    -moz-filter: blur(40px);
+    -ms-filter: blur(40px);
   }
 
   @media (max-width: ${({ theme }) => theme.breakpoint.small}) {

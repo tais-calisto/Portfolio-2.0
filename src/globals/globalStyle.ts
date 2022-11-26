@@ -57,13 +57,16 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .background-detail {
-    position: absolute;
+    position: fixed;
     width: 18rem;
     height: 18rem;
     right: -5rem;
     border-radius: 50%;
     background: rgba(147, 161, 153, 0.2);
     filter: blur(58.386px);
+    -webkit-filter: blur(40px);
+    -moz-filter: blur(40px);
+    -ms-filter: blur(40px);
     overflow: hidden;
   }
 
