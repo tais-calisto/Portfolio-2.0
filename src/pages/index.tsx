@@ -3,10 +3,14 @@ import avatar from '../../public/avatar.svg';
 import { PresetationStyle } from '@src/styles/PresentationStyle';
 import Link from 'next/link';
 import { links } from '@src/utils/navegationLinks';
+import Head from 'next/head';
 
 function App() {
   return (
     <>
+      <Head>
+        <title>Taís Calisto</title>
+      </Head>
       <PresetationStyle>
         <div className='first-animation'>
           <Image src={avatar} alt='Foto de rosto' />

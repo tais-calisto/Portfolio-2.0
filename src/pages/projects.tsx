@@ -3,10 +3,14 @@ import Navegation from '../components/Navegation/Navegation';
 import { ProjectsStyle } from '@src/styles/ProjectsStyle';
 import { projects } from '@src/utils/projects';
 import Footer from '@src/components/Footer';
+import Head from 'next/head';
 
 const Projects = () => {
   return (
     <>
+      <Head>
+        <title>Taís Calisto - Projetos</title>
+      </Head>
       <Navegation />
       <ProjectsStyle>
         <h2>Projetos</h2>

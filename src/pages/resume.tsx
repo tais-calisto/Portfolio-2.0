@@ -9,10 +9,14 @@ import {
 import Navegation from '@src/components/Navegation/Navegation';
 import { experience, education } from '@src/utils/resume';
 import Footer from '@src/components/Footer';
+import Head from 'next/head';
 
 const Resume = () => {
   return (
     <>
+      <Head>
+        <title>Taís Calisto - Currículo</title>
+      </Head>
       <Navegation />
       <ResumeStyle>
         <article className='about'>

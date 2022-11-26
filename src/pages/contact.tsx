@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Navegation from '@src/components/Navegation/Navegation';
 import { ContactStyle } from '@src/styles/ContactStyle';
 import Footer from '@src/components/Footer';
+import Head from 'next/head';
 
 const Contact = () => {
   const email = 'taiscalisto97@gmail.com';
@@ -20,6 +21,9 @@ const Contact = () => {
   };
   return (
     <>
+      <Head>
+        <title>Taís Calisto - Contato</title>
+      </Head>
       <Navegation />
       <ContactStyle>
         <h2>Contato</h2>
