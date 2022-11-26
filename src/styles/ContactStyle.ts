@@ -17,13 +17,13 @@ export const ContactStyle = styled.main`
     background-color: ${({ theme }) => theme.colors.darkGray};
     border-radius: 10px 0 0 10px;
     padding: 2rem;
-    width: 70%;
+    width: 60%;
     margin: 0;
   }
   ul {
     margin: 0;
     padding: 2rem;
-    width: 30%;
+    width: 40%;
     list-style: none;
     line-height: 2rem;
     li {
