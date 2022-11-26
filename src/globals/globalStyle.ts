@@ -57,7 +57,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .background-detail {
-    position: fixed;
+    position: absolute;
     width: 18rem;
     height: 18rem;
     right: -5rem;
@@ -82,7 +82,6 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .background-detail{
-    position: absolute;
     right: 0;
     z-index: -1;
   }
