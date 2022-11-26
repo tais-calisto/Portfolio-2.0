@@ -16,6 +16,7 @@ function App() {
           Crio soluções com <br />
           <span>cuidado e propósito</span>
         </h2>
+        <div className='background-detail'></div>
         <nav>
           {links.map((link) => {
             return (
@@ -25,7 +26,6 @@ function App() {
             );
           })}
         </nav>
-        <div className='background-detail'></div>
       </PresetationStyle>
     </>
   );

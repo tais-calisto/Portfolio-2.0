@@ -72,5 +72,16 @@ export const GlobalStyle = createGlobalStyle`
   body{
     padding: 0 0.5rem;
   }
+
+  
+  header, main, footer{
+  margin: 0 0.5rem ;
+  }
+
+  .background-detail{
+    right: 0;
+  }
+
+
   }
 `;
