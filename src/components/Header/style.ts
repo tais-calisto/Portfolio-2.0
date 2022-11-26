@@ -26,4 +26,11 @@ export const HeaderStyle = styled.header`
     filter: blur(40px);
     border-radius: 50%;
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    justify-content: center;
+    nav {
+      display: none;
+    }
+  }
 `;

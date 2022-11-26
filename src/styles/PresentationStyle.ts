@@ -50,4 +50,11 @@ export const PresetationStyle = styled.main`
       scale: 1;
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    nav {
+      padding-top: 3rem;
+      width: 100%;
+    }
+  }
 `;

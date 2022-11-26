@@ -29,11 +29,6 @@ export const ProjectsStyle = styled.main`
     h3 {
       color: ${({ theme }) => theme.colors.secondary};
     }
-    /* img {
-      width: 10rem;
-      height: 10rem;
-      object-fit: cover;
-    } */
     .tecnologies,
     .links {
       display: flex;
@@ -77,6 +72,21 @@ export const ProjectsStyle = styled.main`
           color: ${({ theme }) => theme.colors.darkGray};
         }
       }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    h2 {
+      margin-left: 1rem;
+    }
+
+    .scroller {
+      margin: 0 2rem 0 1rem;
+      background-color: transparent;
+      display: grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 90%;
+      gap: 1rem;
     }
   }
 `;

@@ -9,6 +9,11 @@ const myTheme: DefaultTheme = {
     darkGray: '#101010',
     black: '#080808',
   },
+
+  breakpoint: {
+    small: '600px',
+    medium: '900px',
+  },
 };
 
 export { myTheme };

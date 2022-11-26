@@ -66,4 +66,11 @@ export const GlobalStyle = createGlobalStyle`
     filter: blur(58.386px);
     overflow: hidden;
   }
+
+  
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+  body{
+    padding: 0 0.5rem;
+  }
+  }
 `;

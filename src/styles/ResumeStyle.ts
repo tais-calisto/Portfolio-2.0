@@ -65,4 +65,15 @@ export const ResumeStyle = styled.main`
       opacity: 1;
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    article {
+      margin-left: 1rem;
+    }
+
+    div {
+      padding-left: 1rem;
+      margin: 0 2rem 0 1rem;
+    }
+  }
 `;

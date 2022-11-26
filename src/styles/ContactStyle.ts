@@ -40,4 +40,28 @@ export const ContactStyle = styled.main`
       opacity: 0.8;
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    h2 {
+      margin-left: 1rem;
+    }
+    div {
+      margin: 0 2rem 0 1rem;
+      flex-direction: column;
+      border-color: transparent;
+      border-style: solid;
+      border-width: 2px;
+      border-radius: 10px;
+    }
+
+    p {
+      background-color: transparent;
+      width: 80%;
+      padding-top: 0;
+    }
+
+    ul {
+      width: 100%;
+    }
+  }
 `;

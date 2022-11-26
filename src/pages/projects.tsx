@@ -16,10 +16,6 @@ const Projects = () => {
               <div key={project.id}>
                 <article>
                   <h3>{project.name}</h3>
-                  {/* <Image
-                    src={project.image}
-                    alt='Foto de demonstração do projeto'
-                  ></Image> */}
                   <p>{project.description}</p>
                   <div className='tecnologies'>
                     <p>Tecnologias utilizadas:</p>

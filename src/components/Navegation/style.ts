@@ -1,4 +1,4 @@
-import styled, { ThemeConsumer } from 'styled-components';
+import styled from 'styled-components';
 
 export const NavStyle = styled.nav`
   width: 50%;
@@ -6,6 +6,7 @@ export const NavStyle = styled.nav`
   justify-content: space-between;
   margin: auto;
   a {
+    z-index: 1;
     font-weight: bold;
     font-family: 'Pridi', serif;
     font-size: 1.25rem;
@@ -15,5 +16,10 @@ export const NavStyle = styled.nav`
   }
   .active {
     color: ${({ theme }) => theme.colors.primary};
+  }
+
+  @media (max-width: ${({ theme }) => theme.breakpoint.small}) {
+    width: 90%;
+    padding-top: 2rem;
   }
 `;
