@@ -17,7 +17,7 @@ export const HeaderStyle = styled.header`
     }
   }
   .background-detail {
-    position: absolute;
+    position: fixed;
     width: 16rem;
     height: 16rem;
     left: -50px;
