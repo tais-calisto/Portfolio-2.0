@@ -80,8 +80,7 @@ export const GlobalStyle = createGlobalStyle`
 
   .background-detail{
     right: 0;
+    z-index: -1;
   }
-
-
   }
 `;
