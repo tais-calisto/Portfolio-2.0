@@ -8,7 +8,7 @@ export const PresetationStyle = styled.main`
   span {
     color: ${({ theme }) => theme.colors.primary};
   }
-  .background-detail {
+  /* .background-detail {
     position: absolute;
     width: 50vw;
     height: 50vh;
@@ -17,7 +17,7 @@ export const PresetationStyle = styled.main`
     border-radius: 50%;
     background: rgba(147, 161, 153, 0.2);
     filter: blur(58.386px);
-  }
+  } */
   .first-animation {
     animation: appear 0.8s ease;
   }
