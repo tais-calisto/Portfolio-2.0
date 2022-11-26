@@ -82,6 +82,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   .background-detail{
+    position: absolute;
     right: 0;
     z-index: -1;
   }
